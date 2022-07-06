@@ -9,16 +9,12 @@ export default function Header () {
                 <img src={Logo} />
                 <h3>Cornerstore</h3>
             </div>
-            
-            
-            
+
             <input type="text" className={styles.search} placeholder="Search a product"></input>
             
-
             <div className={styles.logo}>
                 <img src={ShoppingCart} />
             </div>
-            
         </header>
     )
 }

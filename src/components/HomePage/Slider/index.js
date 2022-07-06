@@ -23,7 +23,6 @@ export default function Slider (props) {
     }
 
     return (
-        
         <div className={styles["main-container"]}>
 
             <div>
@@ -45,10 +44,6 @@ export default function Slider (props) {
                     <input type="button" value=">" onClick={nextBanner}/>
                 </div>
             </div>
-            
-        
         </div>
-        
-        
     )
 }
