@@ -2,19 +2,13 @@ import styles from './styles.module.css'
 
 export default function GridDetails (props) {   
 
-    console.log(props.featuredProducts)
-
     return (
-        <div className={styles["main-container"]} >
-
+        <div className={styles["main-container"]}>
             <h4 className={styles.title}>{props.title}</h4>     
-
 
             <div className={styles["grid-container"]} >
                 {
-                    props.featuredProducts.map(product => 
-
-                        
+                    props.featuredProducts.map(product =>                         
                         <div className={styles["grid-item"]}>
 
                             <div className={styles["item-details"]}>
@@ -25,12 +19,10 @@ export default function GridDetails (props) {
                             <div className={styles["item-image"]}>
                                 <img src={product.data.mainimage.url} />
                             </div>
-
                         </div>
                     )
                 }
             </div>
         </div>
     )
-
 }

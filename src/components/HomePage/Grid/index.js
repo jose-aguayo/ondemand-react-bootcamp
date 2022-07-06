@@ -8,14 +8,9 @@ export default function Grid(props) {
         
         
         <div className={styles["main-container"]}>
-
             <h4 className={styles.title}>{props.title}</h4>
         
-            
-                
             <div className={styles["grid-container"]}>
-            
-                
                 {
                     props.productCategories.map(element => 
                         <div className={styles["grid-item"]}>
@@ -23,10 +18,7 @@ export default function Grid(props) {
                             <p>{element.data.name}</p>
                         </div>
                     )
-                }
-                
-                
-            
+                } 
             </div>
         </div>
     )

@@ -8,11 +8,11 @@ import HomePage from './components/HomePage';
 function App() {
 
   return (
-    <div>
+    <React.Fragment>
       <Header />
       <HomePage />
       <Footer />
-    </div>
+    </React.Fragment>
     
   )
 
